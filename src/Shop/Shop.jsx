@@ -6,10 +6,12 @@ import ProductCards from './ProductCards'
 import Pagination from './Pagination'
 import Search from './Search'
 import ShopCategory from './ShopCategory'
+import PopularPost from './PopularPost'
+import Tags from './Tags'
 const Shop = () => {
     const [GridList, setGridList]= useState(true)
     const [products, setproducts] = useState(Data)
-    console.log(Data);
+    //console.log(Data);
    
 //Pagination
 const [currentPage, setCurrentPage] = useState(1);
@@ -79,6 +81,8 @@ const filterItem = (curcat)=> {
                             setProducts= {setproducts}
                             selectedCategory= {selectedCategory}
                             />
+                            <PopularPost />
+                            <Tags />
                         </aside>
                     </div>
                 </div>
