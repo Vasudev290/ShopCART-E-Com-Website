@@ -1,10 +1,11 @@
+import { setItem } from 'localforage';
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
 const ProductDisplay = ({item}) => {
     //console.log(item);
-    const {id, name, seller, price, img,  ratingsCount} = item;
-    const [prequantity, setPreQuantity] = useState( );
+    const {id, name, seller, price, img, quantity, ratingsCount} = item;
+    const [prequantity, setPreQuantity] = useState(quantity);
     const [coupon, setCoupan]= useState("")
     const [size, setSize]= useState("Select Size")
     const [color, setColor]= useState("Select Color")
@@ -42,8 +43,19 @@ const ProductDisplay = ({item}) => {
         const existingProductIndex = existingCart.findIndex((item) => item.id === id)
         
         if(existingProductIndex !== -1){
-            existingCart[existingProductIndex]
+            existingCart[existingProductIndex].quantity += prequantity;
+        }else{
+            existingCart.push(product)
         }
+
+        /* Update Local Storage */
+        localStorage.setItem("cart", JSON.stringify(existingCart));
+
+        //Reset Form fileds
+        setPreQuantity(1);
+        setSize("Select Size")
+        setColor("Select Color")
+        setCoupan("")
     }
   return (
     <div>
