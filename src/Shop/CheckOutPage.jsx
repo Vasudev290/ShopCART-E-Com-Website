@@ -1,6 +1,7 @@
 import React,{ useState} from 'react'
 import { Button, Modal } from 'react-bootstrap'
 import "../Components/modal.css"
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const CheckOutPage = () => {
   const [show, setShow] = useState(false)
@@ -14,12 +15,15 @@ const CheckOutPage = () => {
   const handleShow= () => setShow(true)
   const handleClose= () => setShow(false)
 
-  
+  //Direct to home page
+  const location= useLocation();
+  const navigate= useNavigate()
   const from = location.state?.from?.pathname || "/";
+
   const handleOrderConfirm= () => {
     alert("Your Order is placed successfully")
     localStorage.removeItem("cart");
-
+    navigate(from, {replace: true})
   }
 
 
