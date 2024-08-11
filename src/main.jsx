@@ -25,6 +25,12 @@ import SingalProduct from './Shop/SingalProduct.jsx';
 import CartPage from './Shop/CartPage.jsx';
 import SingleBlog from './Blog/SingleBlog.jsx';
 import About from './About/About.jsx';
+import Contact from './Contact/Contact.jsx';
+import Login from './Components/Login.jsx';
+
+
+
+
 
 const router = createBrowserRouter([
   {
@@ -49,16 +55,27 @@ const router = createBrowserRouter([
       },
       {
         path:"/cart-page",
-        element:<CartPage />
+        element:<CartPage/>
       },
       {
         path: "/about",
         element:<About />
+      },
+      {
+        path: "/contact",
+        element:<Contact />
       }
     ],
   },
+  {
+    path: "/login",
+    element:<Login />
+  }
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
+   
+   <RouterProvider router={router} />
+ 
 )
