@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PageHeader from '../Components/PageHeader'
 const showResults = "Showing 01-12 of 139 Results"
-import Data from '../products.json'
+import Data from '../../public/products.json'
 import ProductCards from './ProductCards'
 import Pagination from './Pagination'
 import Search from './Search'
