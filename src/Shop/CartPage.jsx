@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import PageHeader from '../Components/PageHeader';
 import { Link } from 'react-router-dom';
-import delImgUrl from "../../public/images/shop/del.png"
+import delImgUrl from "/images/shop/del.png"
 import CheckOutPage from './CheckOutPage';
 //imh-shop-del
 const CartPage = () => {

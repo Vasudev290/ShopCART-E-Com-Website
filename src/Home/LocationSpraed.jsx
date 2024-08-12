@@ -7,37 +7,37 @@ const desc = "Buy products on your any device with our app & enjoy your time wha
 
 const clientsList = [
 {
- imgUrl: '/src/assets/images/clients/avater.jpg',
+ imgUrl: '/images/clients/avater.jpg',
  imgAlt: 'education thumb rajibraj91 rajibraj',
  text: 'Join with North American',
 },
 {
- imgUrl: '/src/assets/images/clients/avater.jpg',
+ imgUrl: '/images/clients/avater.jpg',
  imgAlt: 'education thumb rajibraj91 rajibraj',
  text: 'Join with GreenLand',
 },
 {
- imgUrl: '/src/assets/images/clients/avater.jpg',
+ imgUrl: '/images/clients/avater.jpg',
  imgAlt: 'education thumb rajibraj91 rajibraj',
  text: 'Join with Asia',
 },
 {
- imgUrl: '/src/assets/images/clients/avater.jpg',
+ imgUrl: '/images/clients/avater.jpg',
  imgAlt: 'education thumb rajibraj91 rajibraj',
  text: 'Join with Brazil',
 },
 {
- imgUrl: '/src/assets/images/clients/avater.jpg',
+ imgUrl: '/images/clients/avater.jpg',
  imgAlt: 'education thumb rajibraj91 rajibraj',
  text: 'Join with Africa',
 },
 {
- imgUrl: '/src/assets/images/clients/avater.jpg',
+ imgUrl: '/images/clients/avater.jpg',
  imgAlt: 'education thumb rajibraj91 rajibraj',
  text: 'Join with Indonesia',
 },
 {
- imgUrl: '/src/assets/images/clients/avater.jpg',
+ imgUrl: '/images/clients/avater.jpg',
  imgAlt: 'education thumb rajibraj91 rajibraj',
  text: 'Join with Russian',
 },

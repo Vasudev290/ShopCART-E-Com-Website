@@ -87,7 +87,7 @@ const Review = () => {
             cupiditate! Ipsum et qui eum officia vero architecto non error nostrum dicta!</p>
             <div className="post-item">
                 <div className="post-thumb">
-                    <img src="/src/assets/images/shop/01.jpg" alt="" />
+                    <img src="/images/shop/01.jpg" alt="" />
                 </div>
                 <div className="post-content">
                     <ul className='lab-ul'>
