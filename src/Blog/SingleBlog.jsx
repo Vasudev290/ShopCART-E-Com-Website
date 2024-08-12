@@ -76,7 +76,7 @@ const SingleBlog = () => {
                                                             facere mollitia nobis quis dolore. Impedit ab molestias iste dolore neque beatae ut 
                                                             earum fuga minus. Praesentium iure perspiciatis aspernatur similique.</p>
 
-                                                            <img src="\src\assets\images\blog\single\01.jpg" alt="" />
+                                                            <img src="\images\blog\single\01.jpg" alt="" />
 
                                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus 
                                                             quibusdam voluptate nemo labore enim eos, saepe nihil sint molestiae et minus incidunt, 
@@ -85,7 +85,7 @@ const SingleBlog = () => {
                                                             pariatur dolor, consequuntur, ipsa eos amet repellat placeat possimus deserunt odit quidem, dolores 
                                                             voluptates aut. Modi mollitia consequuntur explicabo pariatur harum hic illo quia dolor.</p>
                                                             <div className="video-thumb">
-                                                            <img src="\src\assets\images\blog\single\02.jpg" alt="" />
+                                                            <img src="\images\blog\single\02.jpg" alt="" />
                                                             <a href="https://youtu.be/ApcGgpjfvXk?si=PD63-a73fMp7f6Ki" className='video-button popup'
                                                             target='_blank'
                                                             >
