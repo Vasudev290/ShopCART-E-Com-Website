@@ -15,7 +15,7 @@ const socialList = [
 ]
 const Login = () => {
     const [errorMessage, setErrorMessage] = useState("");
-    //const {signupWithGmail, login} = useContext(AuthContext);
+    //const {signUpWithGmail, login} = useContext(AuthContext);
     const location = useLocation();
     const navigate= useNavigate();
 
@@ -39,7 +39,13 @@ const Login = () => {
         
     }
     const handleRegister= () => {
-
+      signUpWithGmail().then((result) => {
+        const user = result.user;
+        navigate(from, {replace: true})
+      }).catch((error) => {
+        const errmsg= error.message;
+        setErrorMessage("Please provide vaild email & password..!")
+    })
     }
   return (
     <div>

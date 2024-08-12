@@ -27,6 +27,9 @@ import SingleBlog from './Blog/SingleBlog.jsx';
 import About from './About/About.jsx';
 import Contact from './Contact/Contact.jsx';
 import Login from './Components/Login.jsx';
+import SignUp from './Components/SignUp.jsx';
+
+
 
 
 
@@ -68,6 +71,10 @@ const router = createBrowserRouter([
     ],
   },
   {
+    path: "/sign-up",
+    element:<SignUp />
+  },
+  {
     path: "/login",
     element:<Login />
   }
@@ -75,7 +82,10 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-   
-   <RouterProvider router={router} />
+   <React.StrictMode>
+     
+          <RouterProvider router={router} />
+     
+   </React.StrictMode>
  
-)
+);
