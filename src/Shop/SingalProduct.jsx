@@ -17,7 +17,7 @@ const SingalProduct = () => {
     const {id} = useParams();
     //console.log(id);
     useEffect(()=>{
-        fetch("/products.json").then(res => res.json()).then(data => setProduct(data));
+        fetch("/src/products.json").then(res => res.json()).then(data => setProduct(data));
     }, [])
 
     const result = product.filter((p) => p.id === id)
