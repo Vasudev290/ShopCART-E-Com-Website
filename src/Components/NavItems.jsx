@@ -1,6 +1,12 @@
 import React, { useState } from 'react'
 import {Link} from 'react-router-dom'
 import logo from "../assets/images/logo/logo.png"
+import Cart from '../Shop/Cart';
+import { FaCartArrowDown } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
 
 const NavItems = () => {
     const [menuToggle, setMenuToggle] = useState(false);
@@ -23,6 +29,7 @@ const NavItems = () => {
                 <div className="header-top-area">
                     <Link to='/signup' className='lab-btn me-3'><span>Create Account</span></Link>
                     <Link to="/login">Log in</Link>
+                    <Link to="/cart-page"><FontAwesomeIcon icon={faShoppingCart}/></Link>
                 </div>
             </div>
         </div>
@@ -51,9 +58,18 @@ const NavItems = () => {
                                 <li><Link to="/contact">Contact</Link></li>
                             </ul>
                         </div>
-                        {/* Sign-in & Login */}
+                        
+                            {/* Sign-in & Login */}
                         <Link to="sign-up" className='lab-btn me-3 d-none d-md-block'>Create Account</Link>
                         <Link to="/login" className='d-none d-md-block'>Log In</Link>
+                        {/* <Link to="/cart-page" className='d-none d-md-block'>{faShoppingCart}</Link> */}
+                        <Link to="/cart-page" className='d-none d-md-block cart-icon'><FontAwesomeIcon icon={faShoppingCart}/></Link>
+
+                        
+                        
+                        
+                        
+                        
 
                         {/* Menu-Toggler */}
                         <div onClick={()=> setMenuToggle(!menuToggle)} className={`header-bar d-lg-none ${menuToggle ? "active" : ""}`}>

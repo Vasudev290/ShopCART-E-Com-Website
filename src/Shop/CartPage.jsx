@@ -3,9 +3,17 @@ import PageHeader from '../Components/PageHeader';
 import { Link } from 'react-router-dom';
 import delImgUrl from "/images/shop/del.png"
 import CheckOutPage from './CheckOutPage';
+import {useNavigate}  from 'react-router-dom'
 //imh-shop-del
 const CartPage = () => {
   const [cartItems, setCartItem] = useState([])
+  const [showCart,setShowCart] = useState(false)
+  const navigate = useNavigate();
+
+  const handleCartClick =()=>{
+    setShowCart(!showCart)
+    navigate('/cart-page');
+  };
 
   useEffect(() => {
     //Fetch cart item from Local storage

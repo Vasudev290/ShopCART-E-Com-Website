@@ -28,6 +28,7 @@ import About from './About/About.jsx';
 import Contact from './Contact/Contact.jsx';
 import Login from './Components/Login.jsx';
 import SignUp from './Components/SignUp.jsx';
+import Cart from './Shop/Cart.jsx';
 
 
 
@@ -77,6 +78,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element:<Login />
+  },
+  {
+    path:"/cart-page",
+    element:<Cart />
   }
   
 ]);

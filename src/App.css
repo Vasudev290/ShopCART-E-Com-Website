@@ -17,6 +17,14 @@
     align-items: center; 
     margin: 7px; }
 
+.cart-icon {
+    margin-left: 15px; /* Adjust the space on the left */
+    display: flex;
+    align-items: center;
+    padding: 5px; /* Adds some padding around the icon */
+    color: #333; /* Optional: Adjust color if needed */
+    }
+      
 .github{ 
     height: 36px; 
     width: 36px; 

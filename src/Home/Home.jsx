@@ -7,6 +7,7 @@ import LocationSpraed from './LocationSpraed'
 import AboutUs from './AboutUs'
 import AppSection from './AppSection'
 import Sponser from './Sponsor'
+//import Cart from './Cart'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <AboutUs />
         <AppSection />
         <Sponser />
+        
     </div>
   )
 }
